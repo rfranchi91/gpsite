@@ -8,7 +8,7 @@ p, label, h1, h2, h3, h4, h5, h6, a, b, span {
 }
 
 nav {
-    display: block !important;
+    /* display: block !important; */
     position: absolute !important;
     top: 0;
     width: 100% !important;
@@ -16,6 +16,10 @@ nav {
     background-color: #388E3C !important;
     padding: 0px 22px !important;
     z-index: 1;
+}
+
+.navSpan {
+    margin-top: 90px !important;
 }
 
 .mainLogo {
@@ -45,16 +49,16 @@ nav {
 }
 
 #circular2 {
-    background-color:#8BC34A;
+    background-color:#C6FF00;
     background-image:
-    radial-gradient(#C8E6C9 25%, transparent 28%),
-    radial-gradient(#C8E6C9 25%, transparent 28%);
+    radial-gradient(#AEEA00 25%, transparent 28%),
+    radial-gradient(#AEEA00 25%, transparent 28%);
     background-size:8px 8px;
     background-position: 0 0, 4px 4px;
 }
 
 .colBlack {
-    color: #333333 ;
+    color: #333333 !important;
 }
 
 .colWhite {
@@ -62,37 +66,65 @@ nav {
 }
 
 .colGreen {
-    color:#4caf50;
+    color:#388E3C !important;
 }
 
 .colRed {
-    color:#990416;
+    color:#990416 !important;
 }
 
 .colBlue {
-    color: #0080b2;
+    color: #0080b2 !important;
 }
 
 .colPurple {
-    color: #D8367E;
+    color: #D8367E !important;
 }
 
 .colYellow {
-    color: #ff9900;
+    color: #ff9900 !important;
 }
 
 .colGray {
-    color: darkgray;
+    color: darkgray !important;
+}
+
+.backColBlack {
+    background-color: #333333 !important;
+}
+
+.backColWhite {
+    background-color:white !important;
+}
+
+.backColRed {
+    background-color:#990416 !important;
+}
+
+.backColBlue {
+    background-color: #0080b2 !important;
+}
+
+.backColPurple {
+    background-color: #D8367E !important;
+}
+
+.backColYellow {
+    background-color: #ff9900 !important;
+}
+
+.backColGray {
+    background-color: darkgray !important;
 }
 
 .backColGreen1 {
     /* background-color: #319B1C; */
-    background-color: #388E3C;
+    background-color: #388E3C !important;
 }
 
 .backColGreen2 {
     /* background-color: #75C11C; */
-    background-color: #8BC34A;
+    background-color: #8BC34A !important;
 }
 
 #footer{
