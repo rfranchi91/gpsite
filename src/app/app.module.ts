@@ -10,11 +10,11 @@ import { FooterComponent } from './extra/footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
-  {path: 'page1', component: Page1Component},
+  {path: 'home', component: Page1Component},
   {path: 'page2', component: Page2Component},
   {path: 'page3', component: Page3Component},
-  {path: '', redirectTo: '/page1', pathMatch:'full'},
-  {path: '**', redirectTo: '/page1', pathMatch:'full'}
+  {path: '', redirectTo: '/home', pathMatch:'full'},
+  {path: '**', redirectTo: '/home', pathMatch:'full'}
 ]
 
 @NgModule({
