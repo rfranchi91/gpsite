@@ -1,3 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.min.css";
 /* @import "~font-awesome/css/font-awesome.css"; */
+
+
+p, label {
+    font-family: 'Mina', sans-serif;
+}
+
+.colBlack {
+    color: #333333 ;
+}
+
+.colWhite {
+    color:white !important;
+}
+
+.colGreen {
+    color:#4caf50;
+}
+
+.colRed {
+    color:#990416;
+}
+
+.colBlue {
+    color: #0080b2;
+}
+
+.colPurple {
+    color: #D8367E;
+}
+
+.colYellow {
+    color: #ff9900;
+}
+
+.colGray {
+    color: darkgray;
+}
+
+.backColGreen1 {
+    /* background-color: #319B1C; */
+    background-color: #388E3C;
+}
+
+.backColGreen2 {
+    /* background-color: #75C11C; */
+    background-color: #8BC34A;
+}
+
+
