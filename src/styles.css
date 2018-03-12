@@ -12,7 +12,7 @@ p, label {
 }
 
 .colWhite {
-    color:white;
+    color:white !important;
 }
 
 .colGreen {
