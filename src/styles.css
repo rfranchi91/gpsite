@@ -58,7 +58,7 @@ nav {
 }
 
 .colBlack {
-    color: #333333 ;
+    color: #333333 !important;
 }
 
 .colWhite {
@@ -66,37 +66,65 @@ nav {
 }
 
 .colGreen {
-    color:#4caf50;
+    color:#388E3C !important;
 }
 
 .colRed {
-    color:#990416;
+    color:#990416 !important;
 }
 
 .colBlue {
-    color: #0080b2;
+    color: #0080b2 !important;
 }
 
 .colPurple {
-    color: #D8367E;
+    color: #D8367E !important;
 }
 
 .colYellow {
-    color: #ff9900;
+    color: #ff9900 !important;
 }
 
 .colGray {
-    color: darkgray;
+    color: darkgray !important;
+}
+
+.backColBlack {
+    background-color: #333333 !important;
+}
+
+.backColWhite {
+    background-color:white !important;
+}
+
+.backColRed {
+    background-color:#990416 !important;
+}
+
+.backColBlue {
+    background-color: #0080b2 !important;
+}
+
+.backColPurple {
+    background-color: #D8367E !important;
+}
+
+.backColYellow {
+    background-color: #ff9900 !important;
+}
+
+.backColGray {
+    background-color: darkgray !important;
 }
 
 .backColGreen1 {
     /* background-color: #319B1C; */
-    background-color: #388E3C;
+    background-color: #388E3C !important;
 }
 
 .backColGreen2 {
     /* background-color: #75C11C; */
-    background-color: #8BC34A;
+    background-color: #8BC34A !important;
 }
 
 #footer{
