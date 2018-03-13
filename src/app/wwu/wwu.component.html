@@ -8,24 +8,11 @@
 
         <div class="row justify-content-start">
           <div class="col">
-<<<<<<< HEAD
             <h2 style="padding-top: 76px;">{{resource.wwu.wwu}}</h2>
-=======
-            <h2 style="padding-top: 76px;">[Work with us]</h2>
->>>>>>> 2596652923951184fb22291b9deb83141fcb0891
           </div>
         </div>
        
         <div class="form-group">
-<<<<<<< HEAD
-          <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="{{resource.wwu.name}}" style="max-width: 450px; font-family: mina;">
-        </div>
-        <div class="form-group">
-          <input type="email" class="form-control form-control-sm" [(ngModel)]="emailStr" id="emailInput" placeholder="{{resource.wwu.email}}" style="max-width: 450px; font-family: mina;">
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="{{resource.wwu.phone}}" style="max-width: 450px; font-family: mina;">
-=======
           <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="Name" style="max-width: 450px;">
         </div>
         <div class="form-group">
@@ -33,44 +20,19 @@
         </div>
         <div class="form-group">
           <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="Phone" style="max-width: 450px;">
->>>>>>> 2596652923951184fb22291b9deb83141fcb0891
         </div>
         <div class="form-group">
           <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
         </div>
         
-        <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
+        <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate" style="background-color: #388e3c; color: white"(click)="performFileInput()">{{resource.wwu.load_cv}}</button>
         <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
-<<<<<<< HEAD
-        <button mat-raised-button color="primary" (click)='sendMessage()'>{{resource.wwu.send}}</button>
-=======
-        <button mat-raised-button color="primary" (click)='sendMessage()'>Send</button>
->>>>>>> 2596652923951184fb22291b9deb83141fcb0891
+        <button mat-raised-button style="background-color: #388e3c; color: white" (click)='sendMessage()'>{{resource.wwu.send}}</button>
 
       </div>
 
       <div class="col-6">
 
-<<<<<<< HEAD
-          <div class="box-body" style="overflow-y: scroll; overflow-x: hidden;">
-            <br>
-            
-            <div class="profile-list">
-              <div class="xlead xh2">
-                 {{resource.wwu.opportunities}}
-              </div>
-            </div>
-            <div class="profile media">
-              <div class="col-1 avatar-container pull-left">
-                <img class="avatar" src="http://pbs.twimg.com/profile_images/519754609716236288/WEtPI7Z5_normal.jpeg" alt="Front-end developer"> <br>
-
-              </div>
-
-              <div class="row">
-                  <div class="col " style="padding-left: 95px; padding-top: 10px;">
-                      <strong>{{resource.wwu.job}}</strong>
-                  </div>
-=======
         <div class="row justify-content-start">
           <div class="col">
             <h2 style="padding-top: 76px;">[Opportunities]</h2>
@@ -92,7 +54,6 @@
                 <div class="list-group">
                   <a *ngFor="let skill of el.skills; let j=index" class="list-group-item list-group-item-action">{{skill}}</a>
                 </div>
->>>>>>> 2596652923951184fb22291b9deb83141fcb0891
               </div>
             </div>
           </div>
