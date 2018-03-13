@@ -14,6 +14,8 @@ export class WwuComponent implements OnInit {
   public fileName: string = null;
   public fileSelected: boolean = false;
   private pdf: string = null;
+
+  public searchParameter;
   
 
   constructor() { }
