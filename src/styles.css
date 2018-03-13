@@ -17,6 +17,31 @@ p, label, h1, h2, h3, h4, h5, h6, a, b, span {
     border: 2px  solid #1c1c1c;
 }
 
+.transparent-card {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.transparent-card-header {
+    background-color: transparent !important;
+    border: transparent !important;
+}
+
+.btn-header {
+    color: #333333 !important;
+    background-color: transparent;
+    border: transparent !important;
+    cursor: pointer;
+}
+
+.btn-header :hover {
+    color: #E0E0E0 !important;
+    background-color: transparent;
+    text-decoration: unset !important;
+    border: transparent !important;
+    cursor: pointer;
+}
+
 .form-control {
     font-family: mina !important;
 }
