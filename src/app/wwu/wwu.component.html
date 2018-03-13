@@ -42,18 +42,18 @@
         <div id="accordion">
           <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
             <div class="card-header transparent-card-header" id="headingEl">
-              <a class="btn-header" data-toggle="collapse" data-target="#collapseEl" aria-expanded="false" aria-controls="#collapseEl">
+              <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
                 <h4 class="text-header">
-                  <img src="assets/images/logo.png" style="width: 30px; height: auto;">
+                  <img src="assets/images/logo.png" style="width: 32px; height: auto;">
                   {{el["title"]}}
                 </h4>
               </a>
             </div>
         
-            <div id="collapseEl" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
+            <div [attr.id]="i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
               <div class="card-body" style="padding-top: 6px;">
                 <div *ngFor="let skill of el.skills; let j=index" class="row">
-                  <div class="col"><label>{{skill}}</label></div>
+                  <div class="col"><label class="colSilver">{{skill}}</label></div>
                 </div>
               </div>
             </div>
