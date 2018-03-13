@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import * as Resource from './../../resource.json';
+
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
+  public resource: any= Resource;
+  
   constructor() { }
 
   ngOnInit() {

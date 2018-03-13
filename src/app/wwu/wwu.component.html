@@ -8,7 +8,7 @@
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">[Work with us]</h2>
+            <h2 style="padding-top: 76px;">{{resource.wwu.wwu}}</h2>
           </div>
         </div>
        
@@ -25,9 +25,9 @@
           <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
         </div>
         
-        <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">Load your CV</button>
+        <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate" style="background-color: #388e3c; color: white"(click)="performFileInput()">{{resource.wwu.load_cv}}</button>
         <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
-        <button mat-raised-button color="primary" (click)='sendMessage()'>Send</button>
+        <button mat-raised-button style="background-color: #388e3c; color: white" (click)='sendMessage()'>{{resource.wwu.send}}</button>
 
       </div>
 
