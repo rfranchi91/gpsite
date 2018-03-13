@@ -6,8 +6,38 @@
                 
             <!--First column-->
             <div class="col-md-6">
-                <h5 class="text-uppercase">Footer Content</h5>
-                <p>Here you can use rows and columns here to organize your footer content.</p>
+                <h3 class="text-uppercase" style="padding-left: 4px; font-weight: 700">{{resource.footer.contatti}}</h3>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <h2 style="padding-left: 25px;">{{resource.footer.gp_srl}}</h2>
+                            <p style="padding-left: 25px;"></p>
+                        </div>
+                        <div class="row">
+                            <h5 style="padding-left: 25px; font-weight: 700">{{resource.footer.sede_locali}}:</h5>
+                        </div>
+                        <div class="row">
+                            <p style="padding-left: 25px; margin-bottom: 5px;">{{resource.footer.gp_indirizzo_lg}}</p>
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <h5 style="padding-left: 25px; font-weight: 700">{{resource.footer.sede_operativa}}:</h5>
+                        </div>
+                        <div class="row">
+                            <p style="padding-left: 25px; margin-bottom: 5px;">{{resource.footer.gp_indirizzo_op}}</p>
+                        </div>
+                        <div class="row">   
+                            <p style="padding-left: 25px;">{{resource.footer.gp_phone}}</p>
+                        </div>
+                        
+                    
+                    </div>
+
+                   
+    
+                </div>
+                
             </div>
             <!--/.First column-->
 
@@ -28,8 +58,7 @@
 
     <!--Copyright-->
     <div class="footer-copyright py-3 text-center">
-        © 2018 Copyright:
-        <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+        © 2018 {{resource.footer.gp_srl}} | {{resource.footer.gp_piva}} |
     </div>
     <!--/.Copyright-->
 

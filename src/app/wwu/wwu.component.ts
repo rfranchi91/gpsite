@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import * as Resource from './../resource.json';
+
 @Component({
   selector: 'app-wwu',
   templateUrl: './wwu.component.html',
   styleUrls: ['./wwu.component.css']
 })
 export class WwuComponent implements OnInit {
+
+  resource:any = Resource;
 
   public nameStr: string;
   public emailStr: string;
@@ -19,7 +23,9 @@ export class WwuComponent implements OnInit {
   public searchParameter;
   
 
-  constructor() { }
+  constructor() { 
+    
+  }
 
   ngOnInit() {
 

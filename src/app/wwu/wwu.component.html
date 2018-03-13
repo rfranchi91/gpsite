@@ -9,26 +9,26 @@
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">[Lavora con noi]</h2>
+            <h2 style="padding-top: 76px;">{{resource.wwu.wwu}}</h2>
           </div>
         </div>
        
         <div class="form-group">
-          <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="Name" style="max-width: 450px; font-family: mina;">
+          <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="{{resource.wwu.name}}" style="max-width: 450px; font-family: mina;">
         </div>
         <div class="form-group">
-          <input type="email" class="form-control form-control-sm" [(ngModel)]="emailStr" id="emailInput" placeholder="Email" style="max-width: 450px; font-family: mina;">
+          <input type="email" class="form-control form-control-sm" [(ngModel)]="emailStr" id="emailInput" placeholder="{{resource.wwu.email}}" style="max-width: 450px; font-family: mina;">
         </div>
         <div class="form-group">
-          <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="Phone" style="max-width: 450px; font-family: mina;">
+          <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="{{resource.wwu.phone}}" style="max-width: 450px; font-family: mina;">
         </div>
         <div class="form-group">
           <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" style="max-width: 450px; font-family: mina;"></textarea>
         </div>
         
-        <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">Load your CV</button>
+        <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
         <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
-        <button mat-raised-button color="primary" (click)='sendMessage()'>invia!</button>
+        <button mat-raised-button color="primary" (click)='sendMessage()'>{{resource.wwu.send}}</button>
 
       </div>
 
@@ -39,7 +39,7 @@
             
             <div class="profile-list">
               <div class="xlead xh2">
-                OPPORTUNITIES 
+                 {{resource.wwu.opportunities}}
               </div>
             </div>
             <div class="profile media">
@@ -50,7 +50,7 @@
 
               <div class="row">
                   <div class="col " style="padding-left: 95px; padding-top: 10px;">
-                      <strong>Front-end developer</strong>
+                      <strong>{{resource.wwu.job}}</strong>
                   </div>
               </div>
 
