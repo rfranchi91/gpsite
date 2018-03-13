@@ -27,7 +27,14 @@
           <textarea style="border-radius: 7px;" name="your-message" cols="42" rows="10"></textarea>
           <br>
          
-          <button> Carica il tuo cv </button>
+          <button md-raised-button type="submit"
+          class="btn-w-md marginCanelUpdate"
+          color="primary"
+          (click)="performFileInput()">Load your CV</button>
+
+          <input id="fileInput" accept="application/pdf"
+          type="file" name="file" style="display:none;"
+          (change)="fileChangeListener($event)">
 
           <span class="space"></span>
 
