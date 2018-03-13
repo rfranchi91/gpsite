@@ -1,4 +1,4 @@
-<footer class="page-footer font-small blue pt-4 mt-4" style="background-color: #F5F5F5">
+<footer class="page-footer font-small blue pt-4 mt-4" style="height: 50%; position:relative; top:362px; background-color: #388e3c">
 
     <!--Footer Links-->
     <div class="container-fluid text-center text-md-left">
@@ -6,42 +6,30 @@
                 
             <!--First column-->
             <div class="col-md-6">
-                <h4 class="text-uppercase" style="padding-left: 4px; font-weight: 700">{{resource.footer.contatti}}</h4>
-                <div class="row">
-                    <div class="col">
+                <div class="row ">
+                    <div class="col ">
                         <div class="row">
-                            <h5 style="padding-left: 25px;">{{resource.footer.gp_srl}}</h5>
-                            <p style="padding-left: 25px;"></p>
+                            <h6 class="text-uppercase" style="padding-left: 25px; font-size: 85%; color: #E0E0E0">{{resource.footer.contatti}}</h6>
                         </div>
                         <div class="row">
-                            <h5 style="padding-left: 25px; font-weight: 700">{{resource.footer.sede_locali}}:</h5>
+                            <i class="material-icons" style=" color: #E0E0E0 ; padding-left: 25px;margin-bottom: 8px; margin-right: 2px;">phone</i>
+                            <div class="col" style="padding-top: 3px;">
+                                <p style="color: #E0E0E0; font-size: 85%; margin-bottom: 6px;">{{resource.footer.gp_phone}}</p>
+                            </div>
                         </div>
                         <div class="row">
-                            <p style="padding-left: 25px; margin-bottom: 5px;">{{resource.footer.gp_indirizzo_lg}}</p>
-                        </div>
-                        <br>
-
-                        <div class="row">
-                            <h5 style="padding-left: 25px; font-weight: 700">{{resource.footer.sede_operativa}}:</h5>
-                        </div>
-                        <div class="row">
-                            <p style="padding-left: 25px; margin-bottom: 5px;">{{resource.footer.gp_indirizzo_op}}</p>
-                        </div>
-                        <div class="row">   
-                            <p style="padding-left: 25px;">{{resource.footer.gp_phone}}</p>
-                        </div>
-                        
-                    
-                    </div>
-
-                   
+                            <i class="material-icons" style="color: #E0E0E0 ; padding-left: 25px; margin-bottom: 8px; margin-right: 2px;">mail</i>
+                          <div class="col" style="padding-top: 3px;">
+                            <p style=" color: #E0E0E0; font-size: 85%; margin-bottom: 15px;">{{resource.footer.gp_email}}</p>
+                          </div>  
     
-                </div>
-                
+                        </div>
+                    </div>
+                </div>  
             </div>
             <!--/.First column-->
 
-            <!--Second column-->
+            <!--Second column
             <div class="col-md-6">
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
@@ -50,15 +38,15 @@
                     <li><a routerLink="/page3">Go to Page3</a></li>
                     <li><a routerLink="/wwu">Go to wwu</a></li>
                 </ul>
-            </div>
+            </div> -->
             <!--/.Second column-->
         </div>
     </div>
     <!--/.Footer Links-->
 
     <!--Copyright-->
-    <div class="footer-copyright py-3 text-center">
-        © 2018 {{resource.footer.gp_srl}} | {{resource.footer.gp_piva}} |
+    <div class="footer-copyright py-3 text-center" style="color: #E0E0E0;">
+        © 2018 {{resource.footer.gp_srl}} | {{resource.footer.gp_piva}} | {{resource.footer.sede_legale}}: {{resource.footer.gp_indirizzo_lg}} | {{resource.footer.sede_operativa}}: {{resource.footer.gp_indirizzo_op}}
     </div>
     <!--/.Copyright-->
 
