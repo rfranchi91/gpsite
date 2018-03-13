@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 /* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 /* @import "~font-awesome/css/font-awesome.css"; */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
 p, label, h1, h2, h3, h4, h5, h6, a, b, span {
@@ -29,7 +30,7 @@ nav {
     position: absolute !important;
     top: 0;
     width: 100% !important;
-    height: 90px !important;
+    height: 100px !important;
     background-color: #388E3C !important;
     padding: 0px 22px !important;
     z-index: 1;
@@ -45,6 +46,17 @@ nav {
     font-weight: 500;
     color: #E0E0E0;
     margin: 0 !important;
+    padding: 15px 0px !important;
+}
+
+.it{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #E0E0E0;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 154px;
     padding: 15px 0px !important;
 }
 
@@ -152,3 +164,5 @@ nav {
     bottom: 0px;
     padding: 25px;
 }
+
+
