@@ -3,17 +3,21 @@
 <div class="container">
 
   <div class="row">
-    
 
       <div class="col-6">
 
         <div class="row justify-content-start">
           <div class="col">
+<<<<<<< HEAD
             <h2 style="padding-top: 76px;">{{resource.wwu.wwu}}</h2>
+=======
+            <h2 style="padding-top: 76px;">[Work with us]</h2>
+>>>>>>> 2596652923951184fb22291b9deb83141fcb0891
           </div>
         </div>
        
         <div class="form-group">
+<<<<<<< HEAD
           <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="{{resource.wwu.name}}" style="max-width: 450px; font-family: mina;">
         </div>
         <div class="form-group">
@@ -21,19 +25,33 @@
         </div>
         <div class="form-group">
           <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="{{resource.wwu.phone}}" style="max-width: 450px; font-family: mina;">
+=======
+          <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="Name" style="max-width: 450px;">
         </div>
         <div class="form-group">
-          <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" style="max-width: 450px; font-family: mina;"></textarea>
+          <input type="email" class="form-control form-control-sm" [(ngModel)]="emailStr" id="emailInput" placeholder="Email" style="max-width: 450px;">
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="Phone" style="max-width: 450px;">
+>>>>>>> 2596652923951184fb22291b9deb83141fcb0891
+        </div>
+        <div class="form-group">
+          <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
         </div>
         
         <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
         <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
+<<<<<<< HEAD
         <button mat-raised-button color="primary" (click)='sendMessage()'>{{resource.wwu.send}}</button>
+=======
+        <button mat-raised-button color="primary" (click)='sendMessage()'>Send</button>
+>>>>>>> 2596652923951184fb22291b9deb83141fcb0891
 
       </div>
 
       <div class="col-6">
 
+<<<<<<< HEAD
           <div class="box-body" style="overflow-y: scroll; overflow-x: hidden;">
             <br>
             
@@ -52,57 +70,37 @@
                   <div class="col " style="padding-left: 95px; padding-top: 10px;">
                       <strong>{{resource.wwu.job}}</strong>
                   </div>
-              </div>
-
-             
-         
-            </div>
-
-            
-              
-
-              
-              
-          
+=======
+        <div class="row justify-content-start">
+          <div class="col">
+            <h2 style="padding-top: 76px;">[Opportunities]</h2>
           </div>
         </div>
-      </div>
-<!--
-        <div class="col-sm-6 contact col-sm-push-6" style="padding-right: 0px; padding-left: 170px;">
-          <div class="rcorners">
-              <div class="col">
-              
 
-                
-              
-                  <div class="row padding">
-                    <div class="col">
-                      <img class="pull-left width-100 round" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245018/profile/profile-80.jpg" />
-                    </div>
-            
-                    <div class="col padding-top-15">
-                      <h5 class="text-15 text700 pull-left">Front-end developer</h5>
-                      
-                      <a href="#" class="pull-right label fill-white text-gray">13/03/2018</a>
-                    </div>
-                  </div>
-            
-                  <div class="row">
-                    <p class="padding -padding-top">
-                      Skills: 
-                      - Angular 4
-                      - Javascript  
-                      - Html
-                    </p>
-                   
-                  </div>
-            
-             
+        <div id="accordion">
+          <div *ngFor="let el of opportunitiesSample; let i=index" class="card">
+            <div class="card-header" id="headingEl">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapseEl'+i" aria-expanded="true" aria-controls="'#collapseEl'+i">
+                  {{el["title"]}}
+                </button>
+              </h5>
+            </div>
+        
+            <div id="'#collapseEl'+i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
+              <div class="card-body">
+                <div class="list-group">
+                  <a *ngFor="let skill of el.skills; let j=index" class="list-group-item list-group-item-action">{{skill}}</a>
+                </div>
+>>>>>>> 2596652923951184fb22291b9deb83141fcb0891
               </div>
-          
-            
+            </div>
+          </div>
         </div>
-      -->
+
+      </div>
+
+  </div>
           
         
   </div>
