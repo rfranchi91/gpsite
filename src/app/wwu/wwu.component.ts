@@ -16,8 +16,16 @@ export class WwuComponent implements OnInit {
   public fileSelected: boolean = false;
   private pdf: string = null;
 
-  public searchParameter;
-  
+  public opportunitiesSample = [
+    {
+    "title" : "Front-end Dev",
+    "skills": ["0", "1", "2"]
+    },
+    {
+    "title" : "Back-end Dev",
+    "skills": ["3", "4", "5", "6"]
+    }
+  ]
 
   constructor() { }
 
