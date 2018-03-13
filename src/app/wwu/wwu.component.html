@@ -43,7 +43,10 @@
           <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
             <div class="card-header transparent-card-header" id="headingEl">
               <a class="btn-header" data-toggle="collapse" data-target="#collapseEl" aria-expanded="false" aria-controls="#collapseEl">
-                <h5 class="text-header">{{el["title"]}}</h5>
+                <h4 class="text-header">
+                  <img src="assets/images/logo.png" style="width: 30px; height: auto;">
+                  {{el["title"]}}
+                </h4>
               </a>
             </div>
         
