@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import * as $ from 'jquery';
 @Component({
   selector: 'app-wwu',
   templateUrl: './wwu.component.html',
@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WwuComponent implements OnInit {
 
-  public name: string;
-  public email: string;
-  public phone: string;
+  public nameStr: string;
+  public emailStr: string;
+  public phoneStr: string;
+  public messageStr: string;
 
   public fileName: string = null;
   public fileSelected: boolean = false;

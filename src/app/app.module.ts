@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
@@ -14,6 +15,9 @@ import { WwuComponent } from './wwu/wwu.component';
 
 import { FooterComponent } from './extra/footer/footer.component';
 import { RouterModule, Routes } from '@angular/router';
+
+import {MatButtonModule} from '@angular/material';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 const appRoutes: Routes = [
@@ -35,6 +39,7 @@ const appRoutes: Routes = [
     WwuComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
