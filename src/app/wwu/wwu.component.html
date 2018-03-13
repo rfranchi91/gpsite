@@ -8,7 +8,7 @@
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">{{resource.wwu.work_with_us}}</h2>
+            <h2 style="padding-top: 76px; color: white">{{resource.wwu.work_with_us}}</h2>
           </div>
         </div>
        
@@ -35,7 +35,7 @@
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">{{resource.wwu.opportunities}}</h2>
+            <h2 style="padding-top: 76px; color: white">{{resource.wwu.opportunities}}</h2>
           </div>
         </div>
 
@@ -43,7 +43,7 @@
           <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
             <div class="card-header transparent-card-header" id="headingEl">
               <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
-                <h4 class="text-header">
+                <h4 class="text-header" style="color: white">
                   <img src="assets/images/logo.png" style="width: 32px; height: auto;">
                   {{el["title"]}}
                 </h4>
@@ -51,9 +51,9 @@
             </div>
         
             <div [attr.id]="i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
-              <div class="card-body" style="padding-top: 6px;">
+              <div class="card-body" style="padding-top: 6px; ">
                 <div *ngFor="let skill of el.skills; let j=index" class="row">
-                  <div class="col"><label class="colSilver">{{skill}}</label></div>
+                  <div class="col"><label class="colSilver" style="color: white">{{skill}}</label></div>
                 </div>
               </div>
             </div>
