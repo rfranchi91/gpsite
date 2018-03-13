@@ -28,7 +28,7 @@ export class WwuComponent implements OnInit {
 
     // Used to link the Upload button to the file input button
     performFileInput() {
-      // $("#fileInput").click();
+      $("#fileInput").click();
     }
   
     // Used to load a pdf
