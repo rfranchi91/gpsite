@@ -7,6 +7,23 @@ p, label, h1, h2, h3, h4, h5, h6, a, b, span {
     font-family: 'Mina', sans-serif !important;
 }
 
+.full-width {
+    width: 100%;
+  }
+
+
+.rcorners {
+    border-radius: 25px;
+    border: 2px  solid #1c1c1c;
+
+}
+
+.form-control{
+    background-color: rgba(#fff, .05);
+    border-color: rgba(#000, .15);
+    color: white;
+  }
+
 nav {
     /* display: block !important; */
     position: absolute !important;
