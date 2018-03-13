@@ -12,7 +12,7 @@ nav {
     position: absolute !important;
     top: 0;
     width: 100% !important;
-    height: 90px !important;
+    height: 100px !important;
     background-color: #388E3C !important;
     padding: 0px 22px !important;
     z-index: 1;
@@ -28,6 +28,17 @@ nav {
     font-weight: 500;
     color: #E0E0E0;
     margin: 0 !important;
+    padding: 15px 0px !important;
+}
+
+.it{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    color: #E0E0E0;
+    position: absolute;
+    margin-top: 35px;
+    margin-left: 154px;
     padding: 15px 0px !important;
 }
 
@@ -135,3 +146,5 @@ nav {
     bottom: 0px;
     padding: 25px;
 }
+
+
