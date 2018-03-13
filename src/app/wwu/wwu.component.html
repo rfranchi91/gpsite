@@ -8,27 +8,17 @@
           <h2 style="padding-top: 76px;">[Lavora con noi]</h2>
           <span class="divider divider-md"></span>
         </div>
- 
-        
 
-
-     
           <input style="margin-bottom: 8px; border-radius: 7px;" type="text"  value="" size="40" aria-required="true" aria-invalid="false" placeholder="Nome" />
         
           <input style="margin-bottom: 8px; border-radius: 7px;" type="text"  value="" size="40" aria-required="true" aria-invalid="false" placeholder="Email" />
-         
 
-          <input type="text" style="margin-bottom: 8px; border-radius: 7px;"  value="" size="40" aria-required="true" aria-invalid="false" placeholder="Telefono" />
-       
-
+          <input type="text" style="margin-bottom: 8px; border-radius: 7px;"  value="" size="40" aria-required="true" aria-invalid="false" placeholder="Telefono"/>
       
-          <textarea style="border-radius: 7px;" name="your-message" cols="42" rows="10"></textarea>
+          <textarea style="border-radius: 7px;" name="your-message" cols="42" rows="10" placeholder="Messaggio"></textarea>
           <br>
          
-          <button md-raised-button type="submit"
-          class="btn-w-md marginCanelUpdate"
-          color="primary"
-          (click)="performFileInput()">Load your CV</button>
+          <button mat-raised-button color="primary" type="submit" class="btn-w-md marginCanelUpdate" (click)="performFileInput()">Load your CV</button>
 
           <input id="fileInput" accept="application/pdf"
           type="file" name="file" style="display:none;"
@@ -36,9 +26,7 @@
 
           <span class="space"></span>
 
-          <button  (click)='invia()'>
-            invia!
-          </button>
+          <button mat-raised-button color="primary" (click)='sendMessage()'>invia!</button>
         </div>
 
         <div class="col-sm-6 contact col-sm-push-6" style="padding-right: 0px; padding-left: 170px;">
