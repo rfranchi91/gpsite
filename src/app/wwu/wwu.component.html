@@ -4,11 +4,11 @@
 
   <div class="row">
 
-      <div class="col-6">
+      <div class="col-7">
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">{{resource.wwu.wwu}}</h2>
+            <h2 style="padding-top: 76px;">{{resource.wwu.work_with_us}}</h2>
           </div>
         </div>
        
@@ -31,28 +31,29 @@
 
       </div>
 
-      <div class="col-6">
+      <div class="col-5">
 
         <div class="row justify-content-start">
           <div class="col">
-            <h2 style="padding-top: 76px;">[Opportunities]</h2>
+            <h2 style="padding-top: 76px;">{{resource.wwu.opportunities}}</h2>
           </div>
         </div>
 
         <div id="accordion">
-          <div *ngFor="let el of opportunitiesSample; let i=index" class="card">
-            <div class="card-header" id="headingEl">
-              <h5 class="mb-0">
-                <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapseEl'+i" aria-expanded="true" aria-controls="'#collapseEl'+i">
+          <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
+            <div class="card-header transparent-card-header" id="headingEl">
+              <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
+                <h4 class="text-header">
+                  <img src="assets/images/logo.png" style="width: 32px; height: auto;">
                   {{el["title"]}}
-                </button>
-              </h5>
+                </h4>
+              </a>
             </div>
         
-            <div id="'#collapseEl'+i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
-              <div class="card-body">
-                <div class="list-group">
-                  <a *ngFor="let skill of el.skills; let j=index" class="list-group-item list-group-item-action">{{skill}}</a>
+            <div [attr.id]="i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
+              <div class="card-body" style="padding-top: 6px;">
+                <div *ngFor="let skill of el.skills; let j=index" class="row">
+                  <div class="col"><label class="colSilver">{{skill}}</label></div>
                 </div>
               </div>
             </div>

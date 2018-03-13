@@ -23,7 +23,7 @@ export class WwuComponent implements OnInit {
   public opportunitiesSample = [
     {
     "title" : "Front-end Dev",
-    "skills": ["0", "1", "2"]
+    "skills": ["0 - questo è un testo di prova molto lungo per una skill", "1", "2"]
     },
     {
     "title" : "Back-end Dev",
