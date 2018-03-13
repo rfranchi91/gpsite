@@ -25,10 +25,21 @@
           <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
         </div>
         
-        <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate" style="background-color: #388e3c; color: white"(click)="performFileInput()">{{resource.wwu.load_cv}}</button>
+        <!-- <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colSilver" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
         <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
-        <button mat-raised-button style="background-color: #388e3c; color: white" (click)='sendMessage()'>{{resource.wwu.send}}</button>
+        <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button> -->
+        <!-- <mat-spinner [diameter]="45"></mat-spinner> -->
 
+        <div class="row">
+          <div class="col-9">
+            <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colSilver" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
+            <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
+            <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button>
+          </div>
+          <div class="col-3 text-right">
+            <mat-spinner *ngIf="loading == true" [diameter]="40"></mat-spinner>
+          </div>
+        </div>
       </div>
 
       <div class="col-5">
@@ -50,7 +61,7 @@
               </a>
             </div>
         
-            <div [attr.id]="i" class="collapse show" aria-labelledby="headingEl" data-parent="#accordion">
+            <div [attr.id]="i" class="collapse" aria-labelledby="headingEl" data-parent="#accordion">
               <div class="card-body" style="padding-top: 6px;">
                 <div *ngFor="let skill of el.skills; let j=index" class="row">
                   <div class="col"><label class="colSilver">{{skill}}</label></div>

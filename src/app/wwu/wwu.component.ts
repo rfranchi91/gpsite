@@ -19,6 +19,7 @@ export class WwuComponent implements OnInit {
   public fileName: string = null;
   public fileSelected: boolean = false;
   private pdf: string = null;
+  public loading: boolean = false;
 
   public opportunitiesSample = [
     {
@@ -46,14 +47,17 @@ export class WwuComponent implements OnInit {
     // Used to link the Upload button to the file input button
     performFileInput() {
       $("#fileInput").click();
+      //this.loading = true;
     }
   
     // Used to load a pdf
     fileChangeListener($event) {
+      this.loading = true;
       var that = this;
 
       this.pdf = null;
       this.fileName = null;
+      console.log(this.loading);
 
       let file: File = $event.target.files[0];
       let myReader: FileReader = new FileReader();
@@ -65,6 +69,8 @@ export class WwuComponent implements OnInit {
         that.fileName = file.name;
         console.log(that.fileName);
         that.fileSelected = true;
+        that.loading = false;
+        console.log(that.loading);
       };      
     }
 

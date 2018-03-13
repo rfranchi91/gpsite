@@ -17,6 +17,10 @@ p, label, h1, h2, h3, h4, h5, h6, a, b, span {
     border: 2px  solid #1c1c1c;
 }
 
+.mat-progress-spinner circle, .mat-spinner circle {
+    stroke: #E0E0E0;
+}
+
 .transparent-card {
     background-color: transparent !important;
     border: transparent !important;
@@ -140,7 +144,7 @@ nav {
 }
 
 .colSilver {
-    color: #E0E0E0;
+    color: #E0E0E0 !important;
 }
 
 .backColBlack {
