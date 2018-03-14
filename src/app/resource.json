@@ -38,6 +38,10 @@
         "link": "Link",
         "stage": "Stage e Tirocinio",
         "positions": "Posizioni Aperte",
-        "job": "job"
+        "job": "job",
+        "req1": "Requisiti:",
+        "req2": " diploma di maturità in Informatica con votazione minima di 70/100",
+        "title": "Sei un neodiplomato?",
+        "subtitle": "Mandaci la tua candidatura!"
     }
 }

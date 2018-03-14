@@ -48,6 +48,7 @@ p, label, h1, h2, h3, h4, h5, h6, a, b, span {
 
 .form-control {
     font-family: mina !important;
+    font-size: 150%;
 }
 
 nav {

@@ -1,6 +1,10 @@
 <div class="navSpan"></div>
 
 <div class="container">
+
+  <div class="title" style="margin-top: 6%;">{{resource.page2.title}}</div>
+
+  <div class="subtitle">{{resource.page2.subtitle}}</div>
   
     <div class="row">
   
@@ -24,7 +28,7 @@
           <div class="form-group">
             <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
           </div>
-          
+          <div class="req" style="margin-bottom: 2%;"> <span style="font-weight: bold;">{{resource.page2.req1}}</span>{{resource.page2.req2}}</div>
           <!-- <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colSilver" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
           <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
           <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button> -->
@@ -54,17 +58,17 @@
             <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
               <div class="card-header transparent-card-header" id="headingEl">
                 <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
-                  <h4 class="text-header" style="color: white">
-                    <img src="assets/images/logo.png" style="width: 32px; height: auto;">
+                  <h3 class="text-header" style="color: white">
+                    <img src="assets/images/logo.png" style="width: 50px; height: auto; ">
                     {{el["title"]}}
-                  </h4>
+                  </h3>
                 </a>
               </div>
           
               <div [attr.id]="i" class="collapse" aria-labelledby="headingEl" data-parent="#accordion">
                 <div class="card-body" style="padding-top: 6px;">
                   <div *ngFor="let skill of el.skills; let j=index" class="row">
-                    <div class="col"><label class="colSilver" style="color: white">{{skill}}</label></div>
+                    <div class="col"><label class="colSilver" style="color: white; font-size: 150%;">{{skill}}</label></div>
                   </div>
                 </div>
               </div>

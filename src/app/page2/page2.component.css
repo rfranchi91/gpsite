@@ -207,3 +207,26 @@ div#main-user-profile {
 div.canvas-container canvas {
     border: 1px solid #888888;
 }
+
+.title {
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: Poppins;
+}
+
+.subtitle 
+{
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+}
+
+.req {
+    font-family: Mina;
+    font-size: 125%;
+    font-style: italic;
+    color: white;
+}
