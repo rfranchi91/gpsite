@@ -1,5 +1,14 @@
-.user-image{
-    text-align:center; 
+.column{
     padding-top:80px;
     padding-bottom: 80px;
+}
+
+.user-image{
+    text-align:center; 
+}
+
+.staffName{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
 }
