@@ -1,5 +1,79 @@
 <div class="navSpan"></div>
 
-<p>
-  page2 works!
-</p>
+<div class="container">
+  
+    <div class="row">
+  
+        <div class="col-7">
+  
+          <div class="row justify-content-start">
+            <div class="col">
+              <h2 style="padding-top: 76px; font-size:300%; color: white">{{resource.page2.stage}}</h2>
+            </div>
+          </div>
+         
+          <div class="form-group">
+            <input type="text" class="form-control form-control-sm" [(ngModel)]="nameStr" id="nameInput" placeholder="Name" style="max-width: 450px;">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control form-control-sm" [(ngModel)]="emailStr" id="emailInput" placeholder="Email" style="max-width: 450px;">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control form-control-sm" [(ngModel)]="phoneStr" id="phoneInput" placeholder="Phone" style="max-width: 450px;">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control form-control-sm" [(ngModel)]="messageStr" id="messageInput" rows="6" placeholder="Message" style="max-width: 450px;"></textarea>
+          </div>
+          
+          <!-- <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colSilver" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
+          <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
+          <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button> -->
+          <!-- <mat-spinner [diameter]="45"></mat-spinner> -->
+  
+          <div class="row">
+            <div class="col-9">
+              <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colWhite" (click)="performFileInput()">{{resource.page2.load_cv}}</button>
+              <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
+              <button mat-raised-button class="backColGreen1 colWhite" (click)='sendMessage()'>{{resource.page2.send}}</button>
+            </div>
+            <div class="col-3 text-right">
+              <mat-spinner *ngIf="loading == true" [diameter]="40"></mat-spinner>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col-5">
+  
+          <div class="row justify-content-start">
+            <div class="col">
+              <h2 style="padding-top: 76px; font-size:300%; color: white">{{resource.page2.positions}}</h2>
+            </div>
+          </div>
+  
+          <div id="accordion">
+            <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
+              <div class="card-header transparent-card-header" id="headingEl">
+                <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
+                  <h4 class="text-header" style="color: white">
+                    <img src="assets/images/logo.png" style="width: 32px; height: auto;">
+                    {{el["title"]}}
+                  </h4>
+                </a>
+              </div>
+          
+              <div [attr.id]="i" class="collapse" aria-labelledby="headingEl" data-parent="#accordion">
+                <div class="card-body" style="padding-top: 6px;">
+                  <div *ngFor="let skill of el.skills; let j=index" class="row">
+                    <div class="col"><label class="colSilver" style="color: white">{{skill}}</label></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+    </div>
+            
+          
+    </div>
