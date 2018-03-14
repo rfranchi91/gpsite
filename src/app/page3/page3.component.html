@@ -2,14 +2,46 @@
 
 <div class="row">
     <div class="col-3 column"> 
-      <div class="row user-image"><div class="col-12"> <img height="140" width="140" src="assets/user.png" (click)="openPopup()"> </div> </div>
-      <div class="row staffName"><div class="col-12"> <label (click)="openPopup()">Daniele</label></div></div>
+      <div class="row user-image">
+        <div class="col-12">
+           <img height="140" width="140" src="assets/user.png"> 
+        </div>
+      </div>
+      <div class="row staffName">
+          <div class="col-12">
+            <label>Daniele</label>
+          </div>
+      </div>
+      <div class="row staffName">
+         <!--  <div class="col-1" > 
+            <i class="material-icons" style="padding-left: 50px; padding-top:2px;">work</i>
+          </div> -->
+          <div class="col-12">
+            <label>Amministratore</label>
+          </div>
+      </div>
     </div> 
 </div>
 
 <div class="row">
   <div class="col-3 column" *ngFor="let person of people"> 
-    <div class="row user-image"><div class="col-12"> <img height="140" width="140" [src]="person.image" (click)="openPopup()"> </div> </div>
-    <div class="row staffName"><div class="col-12"> <label (click)="openPopup()">{{person.name}}</label></div></div>
-  </div> 
+    <div class="row user-image">
+      <div class="col-12"> 
+        <img height="140" width="140" [src]="person.image"> 
+      </div> 
+    </div>
+    <div class="row staffName">
+      <div class="col-12"> 
+        <label>{{person.name}}</label>
+      </div>
+    </div>
+    <div class="row staffName">
+      <!-- <div class="col-1">
+        <i class="material-icons" style="padding-left: 50px; padding-top:18px;">laptop</i>
+      </div> -->
+      <div class="col-12">
+        <label>{{person.role}}</label>
+      </div>
+    </div> 
+  </div>
 </div>

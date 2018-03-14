@@ -13,14 +13,14 @@ import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
 
 export class Page3Component implements OnInit {
   public people:any = [
-    {"name" : "Daniel Dominici", "image" : "assets/user.png"},
-    {"name" : "Emanuele Bonelli", "image" : "assets/user.png"},
-    {"name" : "Giorgia Uffreduzzi", "image" : "assets/user.png"},
-    {"name" : "Piero Aiello", "image" : "assets/user.png"},
-    {"name" : "Riccardo Franchi", "image" : "assets/user.png"},
-    {"name" : "Federico Guidoni", "image" : "assets/user.png"},
-    {"name" : "Pierfabio Sanna", "image" : "assets/user.png"},
-    {"name" : "Cristian Sandica", "image" : "assets/user.png"},
+    {"name" : "Daniel Dominici", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Emanuele Bonelli", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Giorgia Uffreduzzi", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Piero Aiello", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Riccardo Franchi", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Federico Guidoni", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Pierfabio Sanna", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Cristian Sandica", "image" : "assets/user.png", "role" : "Programmatore"},
   ];
 
   constructor(public dialog: MatDialog) { }
