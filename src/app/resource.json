@@ -26,5 +26,22 @@
         "sede_legale": "Sede legale",
         "sede_operativa": "Sede operativa"
 
+    },
+    
+    "page2":{
+        "email": "Email",
+        "name": "Nome",
+        "phone": "Telefono",
+        "send": "Invia",
+        "load_cv": "Carica il tuo CV",
+        "cancel": "Cancel",
+        "link": "Link",
+        "stage": "Stage e Tirocinio",
+        "positions": "Posizioni Aperte",
+        "job": "job",
+        "req1": "Requisiti:",
+        "req2": " diploma di maturità in Informatica con votazione minima di 70/100",
+        "title": "Sei un neodiplomato?",
+        "subtitle": "Mandaci la tua candidatura!"
     }
 }

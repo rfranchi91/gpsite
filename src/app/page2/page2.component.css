@@ -1,0 +1,232 @@
+body{
+    background: #eee;
+  }
+  .wrapper{
+    width: 650px;
+  }
+  .shadow{
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+  }
+  .form textarea {
+    border: none;
+    height: 40px;
+    min-height: 40px;
+    resize: none;
+    line-height: 28px;
+    transition: height 0.3s ease-in-out;
+  }
+  .form textarea:hover{
+    box-shadow: none;
+  }
+  .form textarea:focus{
+    border: 1px solid #ddd;
+    height: 150px;
+    line-height: 21px;
+  }
+  .form .btn{
+    margin-top: 2px;
+  }
+  .item{
+    float: left;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .item .label{
+    margin-top: -1px;
+  }
+
+
+
+  body {
+    background-image: #eeee;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #c0deed;
+    font-size: 15px;
+    text-align: center;
+    font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.box-body {
+    width: 650px;
+    background-color: #fafafa;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+a {
+    color: #224B8D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #224B8D;
+    text-decoration: none;
+    border-bottom: 1px black dotted;
+}
+
+h1 {
+    font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+    color: #527BBD;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div {
+    font-family: Georgia, Utopia, Palatino, 'Palatino Linotype', serif;
+}
+
+.paper-ref h1 {
+    text-align: center;
+    color: #3CB226;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.paper-ref p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+input.xform-control {
+    width: 90%;
+}
+
+div.xform-group {
+    display: inline;
+    text-align: center;
+}
+
+.xlead {
+    font-size: 120%;
+}
+
+.xh2 {
+    color: #3CB226;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.search-page {
+    margin-top: 20px;
+}
+
+.profile-list, .profile-main {
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.profile-list img.avatar {
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.profile-list .avatar-container {
+    min-height: 65px;
+}
+
+.profile-list .profile {
+    border-bottom: 1px dotted #808080;
+}
+
+/* .profile-list .profile a { */
+/*     color: #333333; */
+/* } */
+
+.profile-list .profile small {
+    color: #999999;
+}
+
+.profile-list .profile a:hover {
+    text-decoration: none;
+}
+
+.profile-main img.avatar {
+    border: 4px solid #dddddd;
+    border-radius: 5px;
+}
+
+.profile-main .fullname {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.profile-main .username {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.profile-main .fullname a {
+    color: #333333;
+}
+
+.profile-main .username a {
+    color: #999999;
+}
+
+
+.search-bar input.xform-control1 {
+    width: 320px;
+}
+
+.paper-ref p {
+    font-size: 16px;
+    text-align: left;
+}
+
+.paper-ref .row {
+    text-align: center;
+    font-size: 16px;
+}
+
+button.xbtn, input.xform-control, input.xform-control1 {
+    font-family: "Helvetica Neue",Arial,Helvetica,"Liberation Sans",FreeSans,sans-serif;
+}
+
+strong.dark {
+    color: #224B8D;
+}
+
+div.sample-query {
+    font-size: 13px;
+}
+
+.profile-list .media-body {
+    font-size: 13px;
+}
+
+div#main-user-profile {
+    border: none;
+}
+
+div.canvas-container canvas {
+    border: 1px solid #888888;
+}
+
+.title {
+    font-size: 500%;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-family: Poppins;
+}
+
+.subtitle 
+{
+    font-size: 300%;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+}
+
+.req {
+    font-family: Mina;
+    font-size: 125%;
+    font-style: italic;
+    color: white;
+}

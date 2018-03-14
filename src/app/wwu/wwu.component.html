@@ -50,22 +50,24 @@
           </div>
         </div>
 
-        <div id="accordion">
-          <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
-            <div class="card-header transparent-card-header" id="headingEl">
-              <a class="btn-header" data-toggle="collapse" [attr.data-target]="'#' + i" aria-expanded="false">
-                <h4 class="text-header" style="color: white">
-                  <img src="assets/images/logo.png" style="width: 32px; height: auto;">
-                  {{el["title"]}}
-                </h4>
-              </a>
-            </div>
-        
-            <div [attr.id]="i" class="collapse" aria-labelledby="headingEl" data-parent="#accordion">
-              <div class="card-body" style="padding-top: 6px;">
-                <div *ngFor="let skill of el.skills; let j=index" class="row">
-                  <div class="col"><label class="colSilver" style="color: white">{{skill}}</label></div>
-                </div>
+        <!-- <button *ngIf="openingExport" [@enterAnimation] md-icon-button class="smallBtn backColGray" style="margin: 0 3px;" (click)="exportOpeningList('mail')">
+          <md-icon class="material-icons colPurple">mail_outline</md-icon>
+        </button> -->
+
+        <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
+          <div class="card-header transparent-card-header" id="headingEl">
+            <a class="btn-header">
+              <h4 class="text-header" style="color: white" (click)="openAccordion(i)">
+                <img src="assets/images/logo.png" style="width: 32px; height: auto;">
+                {{el["title"]}}
+              </h4>
+            </a>
+          </div>
+      
+          <div *ngIf="selectedAccordion == i" [@enterAnimation]>
+            <div class="card-body" style="padding-top: 6px;">
+              <div *ngFor="let skill of el.skills; let j=index" class="row">
+                <div class="col"><label class="colSilver" style="color: white">{{skill}}</label></div>
               </div>
             </div>
           </div>
