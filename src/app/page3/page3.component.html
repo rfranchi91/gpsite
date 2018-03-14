@@ -1,22 +1,15 @@
 <div class="navSpan"></div>
 
 <div class="row">
-  <div class="col-4 user-image"> 
-    <img height="140" width="140" src="../../assets/user.png"> 
-    <label>Nome Cognome</label>
-  </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
+    <div class="col-3 column"> 
+      <div class="row user-image"><div class="col-12"> <img height="140" width="140" src="assets/user.png" (click)="openPopup()"> </div> </div>
+      <div class="row staffName"><div class="col-12"> <label (click)="openPopup()">Daniele</label></div></div>
+    </div> 
 </div>
 
 <div class="row">
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-</div>
-
-<div class="row">
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
-  <div class="col-4 user-image"> <img height="140" width="140" src="../../assets/user.png"> </div>
+  <div class="col-3 column" *ngFor="let person of people"> 
+    <div class="row user-image"><div class="col-12"> <img height="140" width="140" [src]="person.image" (click)="openPopup()"> </div> </div>
+    <div class="row staffName"><div class="col-12"> <label (click)="openPopup()">{{person.name}}</label></div></div>
+  </div> 
 </div>
