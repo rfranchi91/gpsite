@@ -1,23 +1,20 @@
 <div class="navSpan"></div>
 
 <div class="row">
-    <div class="col-3 column"> 
+    <div class="col-md-3 column"> 
       <div class="row user-image">
-        <div class="col-12">
+        <div class="col-md-12">
            <img height="140" width="140" src="assets/user.png"> 
            <i class="material-icons">work</i>
         </div>
       </div>
       <div class="row staffName">
-          <div class="col-12">
+          <div class="col-md-12">
             <label>Daniele</label>
           </div>
       </div>
       <div class="row staffName">
-         <!--  <div class="col-1" > 
-            <i class="material-icons" style="padding-left: 50px; padding-top:2px;">work</i>
-          </div> -->
-          <div class="col-12">
+          <div class="col-md-12">
             <label>Amministratore</label>
           </div>
       </div>
@@ -25,23 +22,20 @@
 </div>
 
 <div class="row">
-  <div class="col-3 column" *ngFor="let person of people"> 
+  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let person of people"> 
     <div class="row user-image">
-      <div class="col-12"> 
+      <div class="col-md-12"> 
         <img height="140" width="140" [src]="person.image"> 
         <i class="material-icons">laptop</i>
       </div> 
     </div>
     <div class="row staffName">
-      <div class="col-12"> 
+      <div class="col-md-12"> 
         <label>{{person.name}}</label>
       </div>
     </div>
     <div class="row staffName">
-      <!-- <div class="col-1">
-        <i class="material-icons" style="padding-left: 50px; padding-top:18px;">laptop</i>
-      </div> -->
-      <div class="col-12">
+      <div class="col-md-12">
         <label>{{person.role}}</label>
       </div>
     </div> 
