@@ -13,7 +13,7 @@ import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
 
 export class Page3Component implements OnInit {
   public people:any = [
-    {"name" : "Daniel Dominici", "image" : "assets/user.png", "role" : "Programmatore"},
+    {"name" : "Daniel Dominici", "image" : "assets/daniel.jpg", "role" : "Programmatore"},
     {"name" : "Emanuele Bonelli", "image" : "assets/user.png", "role" : "Programmatore"},
     {"name" : "Giorgia Uffreduzzi", "image" : "assets/user.png", "role" : "Programmatore"},
     {"name" : "Piero Aiello", "image" : "assets/user.png", "role" : "Programmatore"},
