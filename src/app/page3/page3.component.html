@@ -1,42 +1,84 @@
 <div class="navSpan"></div>
 
 <div class="row">
-    <div class="col-md-3 column"> 
+    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let capo of capi"> 
       <div class="row user-image">
         <div class="col-md-12">
-           <img height="140" width="140" src="assets/user.png"> 
-           <i class="material-icons">work</i>
+           <img height="140" width="140" [src]="capo['image']"> 
+           <i class="material-icons">{{capo.icon}}</i>
         </div>
       </div>
       <div class="row staffName">
           <div class="col-md-12">
-            <label>Daniele</label>
+            <label>{{capo.name}}</label>
           </div>
       </div>
       <div class="row staffName">
           <div class="col-md-12">
-            <label>Amministratore</label>
+            <label>{{capo.role}}</label>
           </div>
       </div>
     </div> 
 </div>
 
 <div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let person of people"> 
+  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let of of office"> 
+    <div class="row user-image">
+      <div class="col-md-12">
+         <img height="140" width="140" [src]="of['image']"> 
+         <i class="material-icons">{{of.icon}}</i>
+      </div>
+    </div>
+    <div class="row staffName">
+        <div class="col-md-12">
+          <label>{{of.name}}</label>
+        </div>
+    </div>
+    <div class="row staffName">
+        <div class="col-md-12">
+          <label>{{of.role}}</label>
+        </div>
+    </div>
+  </div> 
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let senior of developer_senior"> 
+    <div class="row user-image">
+      <div class="col-md-12">
+         <img height="140" width="140" [src]="senior['image']"> 
+         <i class="material-icons">{{senior.icon}}</i>
+      </div>
+    </div>
+    <div class="row staffName">
+        <div class="col-md-12">
+          <label>{{senior.name}}</label>
+        </div>
+    </div>
+    <div class="row staffName">
+        <div class="col-md-12">
+          <label>{{senior.role}}</label>
+        </div>
+    </div>
+  </div> 
+</div>
+
+<div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 column" *ngFor="let developer of developer_junior"> 
     <div class="row user-image">
       <div class="col-md-12"> 
-        <img height="140" width="140" [src]="person.image"> 
-        <i class="material-icons">laptop</i>
+        <img height="140" width="140" [src]="developer['image']"> 
+        <i class="material-icons">{{developer.icon}}</i>
       </div> 
     </div>
     <div class="row staffName">
       <div class="col-md-12"> 
-        <label>{{person.name}}</label>
+        <label>{{developer.name}}</label>
       </div>
     </div>
     <div class="row staffName">
       <div class="col-md-12">
-        <label>{{person.role}}</label>
+        <label>{{developer.role}}</label>
       </div>
     </div> 
   </div>
