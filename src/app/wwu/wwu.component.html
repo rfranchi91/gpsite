@@ -30,14 +30,15 @@
         <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button> -->
         <!-- <mat-spinner [diameter]="45"></mat-spinner> -->
 
-        <div class="row">
+        <div class="row" style="max-width: 450px;">
           <div class="col-9">
             <button mat-raised-button type="submit" class="btn-w-md marginCanelUpdate backColGreen1 colSilver" (click)="performFileInput()">{{resource.wwu.load_cv}}</button>
             <input id="fileInput" accept="application/pdf" type="file" name="file" style="display:none;" (change)="fileChangeListener($event)">
             <button mat-raised-button class="backColGreen1 colSilver" (click)='sendMessage()'>{{resource.wwu.send}}</button>
           </div>
           <div class="col-3 text-right">
-            <mat-spinner *ngIf="loading == true" [diameter]="40"></mat-spinner>
+            <label *ngIf="loading"><mat-spinner [diameter]="40"></mat-spinner></label>
+            <label *ngIf="!loading"></label>
           </div>
         </div>
       </div>
@@ -49,10 +50,6 @@
             <h2 style="padding-top: 76px; color: white">{{resource.wwu.opportunities}}</h2>
           </div>
         </div>
-
-        <!-- <button *ngIf="openingExport" [@enterAnimation] md-icon-button class="smallBtn backColGray" style="margin: 0 3px;" (click)="exportOpeningList('mail')">
-          <md-icon class="material-icons colPurple">mail_outline</md-icon>
-        </button> -->
 
         <div *ngFor="let el of opportunitiesSample; let i=index" class="card transparent-card">
           <div class="card-header transparent-card-header" id="headingEl">

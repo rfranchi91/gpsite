@@ -35,8 +35,8 @@ export class WwuComponent implements OnInit {
   public fileName: string = null;
   public fileSelected: boolean = false;
   private pdf: string = null;
-  public loading: boolean = false;
 
+  public loading: boolean = false;
   public selectedAccordion: number = -1000;
 
   public opportunitiesSample = [
@@ -80,26 +80,49 @@ export class WwuComponent implements OnInit {
 
   // Used to load a pdf
   fileChangeListener($event) {
-    this.loading = true;
+    //this.loading = true;
+    console.log(this.loading);
+
     var that = this;
 
     this.pdf = null;
     this.fileName = null;
-    console.log(this.loading);
 
     let file: File = $event.target.files[0];
     let myReader: FileReader = new FileReader();
 
+    //this.loading=true;
+
     myReader.readAsDataURL(file);
-    myReader.onloadend = function (loadEvent: any) {
-      that.pdf = loadEvent.target.result;
-      console.log(that.pdf);
-      that.fileName = file.name;
-      console.log(that.fileName);
-      that.fileSelected = true;
-      that.loading = false;
-      console.log(that.loading);
-    };      
+
+    myReader.onload = function(event) {
+      console.log("onload: " + new Date());
+    };
+
+    myReader.onloadstart = function(event) {
+      console.log("onloadstart " + new Date());
+    };
+
+    myReader.onprogress = function(event) {
+      console.log("onprogress " + new Date());
+    };
+
+    myReader.onloadend = function(event) {
+      console.log("onloadend " + new Date());
+    };
+
+    myReader.onabort = function(event) {
+      console.log("onabort " + new Date());
+    };
+
+    // myReader.onloadend = function (loadEvent: any) {
+    //   that.pdf = loadEvent.target.result;
+    //   console.log(that.pdf);
+    //   that.fileName = file.name;
+    //   console.log(that.fileName);
+    //   that.fileSelected = true;
+    // };
+
   }
 
 }
