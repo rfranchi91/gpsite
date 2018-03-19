@@ -12,3 +12,22 @@
     font-size: 20px;
     margin-top: 15px;
 }
+
+img{
+    border-radius: 180px;
+}
+
+i{
+    background-color: #388E3C;
+    border-radius: 180px;
+    border: solid 1px ;
+    position:absolute; 
+    margin-top:110px; 
+    margin-left:-35px; 
+    padding:6px;
+    color: white;
+}
+
+.row{
+    background-color: white;
+}

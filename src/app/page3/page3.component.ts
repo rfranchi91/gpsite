@@ -12,15 +12,32 @@ import {MAT_DIALOG_DATA, MatDialog, MatDialogRef} from '@angular/material';
 })
 
 export class Page3Component implements OnInit {
-  public people:any = [
-    {"name" : "Daniel Dominici", "image" : "assets/user.png"},
-    {"name" : "Emanuele Bonelli", "image" : "assets/user.png"},
-    {"name" : "Giorgia Uffreduzzi", "image" : "assets/user.png"},
-    {"name" : "Piero Aiello", "image" : "assets/user.png"},
-    {"name" : "Riccardo Franchi", "image" : "assets/user.png"},
-    {"name" : "Federico Guidoni", "image" : "assets/user.png"},
-    {"name" : "Pierfabio Sanna", "image" : "assets/user.png"},
-    {"name" : "Cristian Sandica", "image" : "assets/user.png"},
+  public capi:any = [
+    {"name" : "Daniele Pugliese", "image" : "assets/user.png", "role" : "Administrator", "icon": "work"},
+    {"name" : "Marco Tulli", "image" : "assets/user.png", "role" : "Technical Officer", "icon": "settings"},
+  ];
+
+  public office:any = [
+    {"name" : "Nicla Monacis", "image" : "assets/user.png", "role" : "HR Management",  "icon": "group"},
+    {"name" : "Paola Conticelli", "image" : "assets/user.png", "role" : "Office Management",  "icon": "info"}
+  ];
+
+  public developer_senior:any = [
+    {"name" : "Roberto De Vivo", "image" : "assets/user.png", "role" : "Senior Developer",  "icon": "desktop_windows"},
+    {"name" : "Mariella Venanzangeli", "image" : "assets/user.png", "role" : "Senior Developer",  "icon": "desktop_windows"},
+    {"name" : "Federico Fieni", "image" : "assets/user.png", "role" : "Talend Specialist",  "icon": "desktop_windows"},
+    {"name" : "Marco Filinesi", "image" : "assets/user.png", "role" : "Talend Specialist",  "icon": "desktop_windows"}
+  ];
+  public developer_junior:any = [
+    {"name" : "Daniel Dominici", "image" : "assets/daniel.jpg", "role" : "Junior Developer",  "icon": "laptop"},
+    {"name" : "Emanuele Bonelli", "image" : "assets/user.png", "role" : "Junior Developer",  "icon": "laptop"},
+    {"name" : "Giorgia Uffreduzzi", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"},
+    {"name" : "Piero Aiello", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"},
+    {"name" : "Riccardo Franchi", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"},
+    {"name" : "Yuliya Kovalenko ", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"},
+    {"name" : "Pierfabio Sanna", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"},
+    {"name" : "Giorgia Gesmundo", "image" : "assets/user.png", "role" : "Salesforce Specialist", "icon": "laptop"},
+    {"name" : "Cristian Sandica", "image" : "assets/user.png", "role" : "Junior Developer", "icon": "laptop"}
   ];
 
   constructor(public dialog: MatDialog) { }
@@ -36,5 +53,7 @@ export class Page3Component implements OnInit {
       width: '40%',
     });
   }
+
+  
 
 }
